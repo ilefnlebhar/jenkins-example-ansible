@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'linux'}
+  agent {label 'kubmaster70'}
 
   stages {
     stage('Hello') {
