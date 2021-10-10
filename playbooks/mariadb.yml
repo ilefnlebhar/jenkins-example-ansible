@@ -1,9 +1,12 @@
 - name: MariaDB installation
   hosts: mariadbs
   vars: 
-    ansible_user: dev7
+    ## ansible_user: dev7
   become: yes
   tasks:
+    - name: Afficher ansible_user 
+      debug: 
+         var=ansible_user
     - name: enable and start firewalld service
       systemd:
         name: firewalld
