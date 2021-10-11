@@ -3,6 +3,7 @@
   vars: 
     ## ansible_user: dev7
   become: yes
+  become_method: sudo
   tasks:
     - name: Afficher ansible_user 
       debug: 
