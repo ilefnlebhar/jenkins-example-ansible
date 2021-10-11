@@ -8,7 +8,7 @@ pipeline {
       steps {
         sh 'ansible-galaxy collection install -r requirements.yml'
         // sh 'echo azer | su - dev7; ansible-playbook -i inventory/mariadb.hosts --private-key=$ANSIBLE_PRIVATE_KEY playbooks/mariadb.yml'
-        sh 'ansible-playbook -i inventory/mariadb.hosts playbooks/mariadb.yml -b'
+        sh 'ansible-playbook -i inventory/mariadb playbooks/mariadb.yml'
 
       }
     }
